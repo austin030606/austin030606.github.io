@@ -1,7 +1,7 @@
 <template>
   <div style="font-size: 18vw">
     The
-    HomePage
+    PostsPage
     is
     what
     you
