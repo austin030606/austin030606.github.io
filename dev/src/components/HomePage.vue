@@ -1,17 +1,24 @@
 <template>
-  <div style="font-size: 18vw">
-    The
-    HomePage
-    is
-    what
-    you
-    are
-    looking
-    at
-    right
-    now
+  <div class="pageWrap">
+    <div class="pageBody">
+      homepage
+    </div>
   </div>
 </template>
 
 <script setup>
 </script>
+
+<style scoped>
+.pageBody {
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 3.5rem;
+}
+
+.pageWrap {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+</style>
