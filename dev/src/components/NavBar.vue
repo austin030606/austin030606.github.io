@@ -1,14 +1,14 @@
 <template>
     <div class="NavBar">
         <ul class="NavBarOptions">
-            <li class="NavBarOption">
-                <router-link to="/">HOME</router-link>
+            <li>
+                <router-link to="/" class="NavBarOption">HOME</router-link>
             </li>
-            <li class="NavBarOption">
-                <router-link to="/posts">POSTS</router-link>
+            <li>
+                <router-link to="/posts" class="NavBarOption">POSTS</router-link>
             </li>
-            <li class="NavBarOption">
-                <router-link to="/about">ABOUT</router-link>
+            <li>
+                <router-link to="/about" class="NavBarOption">ABOUT</router-link>
             </li>
         </ul>
     </div>
@@ -20,30 +20,50 @@
 
 <style scoped>
 .NavBar {
+    height: max-content;
     width: 100%;
-    height: 4vw;
     background-color: #262626;
     position: fixed;
     overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 .NavBarOptions {
+    width: 100%;
+    max-width: 1440px;
     list-style-type: none;
-    margin: 0;
-    margin-top: 1vw;
-    padding: 0;
-    padding-left: 3vw;
+    padding-left: 2rem;
     display: flex;
+    margin: 0;
+    margin-top: 1rem;
 }
 
 .NavBarOption {
-    font-size: 1.4vw;
-    font-weight: 500;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
     color: white;
-    margin-right: 2vw;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.router-link-active, .router-link-exact-active {
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.3rem solid #26BEE8;
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+li {
+    width: 6rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 </style>
